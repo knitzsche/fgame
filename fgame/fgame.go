@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 201^ Canonical Ltd
+ * Copyright (C) 2021 Canonical Ltd
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 3 as
@@ -16,10 +16,11 @@
  *	Kyle Nitzsche <kyle.nitzsche@canonical.com>
  */
 
-package main
+package fgame
 
 //#include <locale.h>
 //#include <libintl.h>
+
 import "C"
 
 import (
@@ -81,7 +82,7 @@ func (game *Game) getRandomKey() (string, int) {
 	keyNum := r.Intn(len(game.Keys))
 	return game.Keys[keyNum], keyNum
 }
-
+/*
 func main() {
 	msg("\nLearnit with Flash Cards!\n")
 	if len(os.Args) > 1 {
@@ -136,3 +137,4 @@ func main() {
 	}
 	fmt.Printf("\nIt took %d tries for %d questions\n", tries, flashes)
 }
+*/
